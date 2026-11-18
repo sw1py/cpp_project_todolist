@@ -28,6 +28,9 @@ add_executable(
     src/Graph_lib/GUI.cpp
     src/Graph_lib/Window.cpp
 
+    src/ToDoList.cpp
+    src/widgets.cpp
+
 )
 
 # target_include_directories для ваших исходников Graph_lib оставляем
