@@ -29,7 +29,7 @@ extern Graph_lib::Point right_point_upper_board;
 extern Graph_lib::Point left_point_lower_board;
 extern Graph_lib::Point right_point_lower_board;
 
-void set_line_style(Graph_lib::Line& line, int count_of_pixel, Graph_lib::Line_style::Line_style_type any);
+Graph_lib::Line set_line_style(Graph_lib::Line& line, int count_of_pixel, Graph_lib::Line_style::Line_style_type any);
 
 extern int separator_pixel_count;
 

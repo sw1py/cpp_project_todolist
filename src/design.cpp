@@ -31,7 +31,7 @@ Design_Shapes::Design_Shapes()
 
 //Установка размеров линий (реализация функции для этого)
 
-void set_line_style(Graph_lib::Line& line, int count_of_pixel, Graph_lib::Line_style::Line_style_type any)
+Graph_lib::Line set_line_style(Graph_lib::Line& line, int count_of_pixel, Graph_lib::Line_style::Line_style_type any)
 {
     line.set_style(Graph_lib::Line_style(any, count_of_pixel));
 }
