@@ -5,7 +5,7 @@
 #include <vector>
 #include "Graph_lib/Simple_window.h"
 #include "Graph_lib/Graph.h"
-#include "main_tab.h"
+#include "main_screen.h"
 #include "design.h"
 
 using namespace Graph_lib;
