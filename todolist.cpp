@@ -263,24 +263,22 @@ private:
 
 
 //тесты3 5
-int main()
-{
-    ToDoList list;
-    list.add_record("Возможно надо сделать 67");
-    list.add_task("Сдать практикум");
-    list.add_record("Купить хлеб");
-    list.add_task("Написать бэкэнд");
-    list.mark_record_done(1);
-
-    if (!list.save_to_file("todo.txt"))
-    {
-        cout << "Не удалось сохранить файл" << endl;
-    }
-
-    ToDoList loaded;
-    if (!loaded.load_from_file("todo.txt"))
-    {
-        cout << "Не удалось открыть файл" << endl;
-    }
-    loaded.print_records();
-}
+// int main()
+// {
+//     ToDoList list;
+//     list.add_record("Возможно надо сделать 67");
+//     list.add_task("Сдать практикум");
+//     list.add_record("Купить хлеб");
+//     list.add_task("Написать бэкэнд");
+//     list.mark_record_done(1);
+//     if (!list.save_to_file("todo.txt"))
+//     {
+//         cout << "Не удалось сохранить файл" << endl;
+//     }
+//     ToDoList loaded;
+//     if (!loaded.load_from_file("todo.txt"))
+//     {
+//         cout << "Не удалось открыть файл" << endl;
+//     }
+//     loaded.print_records();
+// }

@@ -18,7 +18,7 @@ set(FLTK_DIR "c:/FLTK_install" CACHE FILEPATH "FLTK install root")
 # 2. Ищем FLTK в режиме CONFIG (это заставит CMake искать FLTKConfig.cmake)
 find_package(FLTK CONFIG REQUIRED)
 
-set(TARGET "ToDoList")
+set(TARGET "checker_board")
 
 add_executable(
     ${TARGET}
@@ -28,8 +28,9 @@ add_executable(
     src/Graph_lib/GUI.cpp
     src/Graph_lib/Window.cpp
 
-    src/ToDoList.cpp
-    src/widgets.cpp
+    src/main_tab.cpp
+    src/design.cpp
+    src/day.cpp
 
 )
 
@@ -54,11 +55,3 @@ target_link_libraries(${TARGET} PRIVATE
 # исходной папки (включая .cpp, .h, CMakeLists.txt) в build-папку.
 # Если нужны только ресурсы (картинки, шрифты) — укажите конкретную подпапку,
 # например ${PROJECT_SOURCE_DIR}/resources
-add_custom_target(CopyResources ALL
-    COMMAND ${CMAKE_COMMAND} -E copy_directory
-    ${PROJECT_SOURCE_DIR}
-    ${CMAKE_BINARY_DIR}
-    COMMENT "Copying resources into runtime output directory"
-)
-
-add_dependencies(${TARGET} CopyResources)
