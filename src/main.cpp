@@ -5,7 +5,6 @@
 #include <vector>
 #include "Graph_lib/Simple_window.h"
 #include "Graph_lib/Graph.h"
-#include "main_screen.h"
 #include "design.h"
 
 using namespace Graph_lib;
@@ -19,17 +18,22 @@ Graph_lib::Window main_tab {screen_place, w_size_of_window, h_size_of_window,  p
 main_tab.resizable(nullptr);
 
 //Сепараторы
-Design_Shapes design;
+Design_Main_Screen main_design;
 
-set_line_style(design.high_separator, separator_pixel_count, Line_style::solid);
-set_line_style(design.right_separator, separator_pixel_count, Line_style::solid);
-set_line_style(design.upper_board, separator_pixel_count, Line_style::solid);
-set_line_style(design.lower_board, separator_pixel_count, Line_style::solid);
+set_line_style(main_design.high_separator, separator_pixel_count, Line_style::solid);
+set_line_style(main_design.right_separator, separator_pixel_count, Line_style::solid);
+set_line_style(main_design.upper_board, separator_pixel_count, Line_style::solid);
+set_line_style(main_design.lower_board, separator_pixel_count, Line_style::solid);
+set_line_style(main_design.left_board, separator_pixel_count, Line_style::solid);
+set_line_style(main_design.right_board, separator_pixel_count, Line_style::solid);
 
-main_tab.attach(design.high_separator);
-main_tab.attach(design.right_separator);
-main_tab.attach(design.upper_board);
-main_tab.attach(design.lower_board);
+main_tab.attach(main_design.high_separator);
+main_tab.attach(main_design.right_separator);
+main_tab.attach(main_design.upper_board);
+main_tab.attach(main_design.lower_board);
+main_tab.attach(main_design.left_board);
+main_tab.attach(main_design.right_board);
+
 
 gui_main();
 

@@ -21,3 +21,8 @@ int MainScreen::get_number_of_records()
 {
     return number_of_records;
 }
+
+Date MainScreen::get_date()
+{
+    return local_data;
+}

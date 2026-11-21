@@ -14,7 +14,7 @@ public:
     virtual void attach_to(Graph_lib::Window& win) = 0;
     virtual void detach_from(Graph_lib::Window& win) = 0;
     
-    virtual void refresh();
+    virtual void refresh() = 0;
 
 protected:
 

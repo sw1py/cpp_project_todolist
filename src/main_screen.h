@@ -3,7 +3,7 @@
 #include "calendar/date.h"
 #include "screen.h"
 #include "Graph_lib/Graph.h"
-#
+
 class MainScreen : public Screen
 {
 public:  
@@ -13,6 +13,7 @@ public:
 
     int get_number_of_tasks();
     int get_number_of_records();
+    Date get_date();
 
 protected:
 

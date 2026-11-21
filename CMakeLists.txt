@@ -28,7 +28,6 @@ add_executable(
     src/Graph_lib/GUI.cpp
     src/Graph_lib/Window.cpp
 
-    src/main_tab.cpp
     src/design.cpp
     src/day.cpp
 
